@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '5bb885d9-2b0a-4e92-b28e-c7c438e2b45b'
   imageRepository: 'kollidattamyonlinestore'
   containerRegistry: 'coitstore.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  dockerfilePath: '**/Dockerfile-multistage'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
