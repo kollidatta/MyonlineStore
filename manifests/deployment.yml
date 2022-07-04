@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: kollidattamyonlinestore 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kollidattamyonlinestore
+  template:
+    metadata:
+      labels:
+        app: kollidattamyonlinestore 
+    spec:
+      containers:
+        - name: kollidattamyonlinestore 
+          image: coitstore.azurecr.io/kollidattamyonlinestore
+          ports:
+          - containerPort: 80
