@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '7e4d5dd1-5e23-4474-a6a5-8606d2dc9a06'
   imageRepository: 'kollidattamyonlinestore'
   containerRegistry: 'coitstore.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/Dockerfile-multistage'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'coitstore20685426-auth'
 
